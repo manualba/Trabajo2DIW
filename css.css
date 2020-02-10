@@ -1,0 +1,26 @@
+body { 
+    padding-bottom: 70px; 
+}
+
+#selected{
+    color: #4724C8;
+    
+}
+
+#footer {
+    /*
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+*/
+background-color: #292c2f;
+        box-shadow: 0 1px 1px #ccc;
+        padding: 20px 30px;
+        height: 100px;
+        color: #4e5359;
+        box-sizing: border-box;
+        bottom: 0px;
+        width: 100%;
+        background: -prefix-linear-gradient(top, gray, white);
+        background: linear-gradient(to bottom, gray, white);
+}
