@@ -90,7 +90,7 @@
     -->
     
     <div class="row text-center pb-4">
-      <div class="container-lg mt-3 text-info">
+      <div class="jumbotron bg-none container-lg mt-3 text-info" id="jumbotron">
             <h1>VUELOS</h1>
       </div>
     </div>
@@ -100,21 +100,154 @@
     <div class="container-lg mt-3 " id="contenido">
         <div class="card-deck">
           <div class="card">
-            <div class="card-body">
-              FECHAS DE VUELOS(form)
+            <div class="text-info border">APARTADO&nbsp;DE&nbsp;VUELOS</div>
+            <div class="card-body bg-light">
+              <form>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="inputSalida">Salida</label>
+                    <input type="email" class="form-control" id="inputSalida" placeholder="Sevilla, España...">
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="inputDestino">Destino</label>
+                    <input type="text" class="form-control" id="inputDestino" placeholder="New York, Estados Unidos...">
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="inputIda">Ida</label>
+                    <input class="form-control" type="date" value="2020-02-07" id="example-date-input">
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="inputVuelta">Vuelta</label>
+                    <input class="form-control" type="date" value="2020-02-15" id="example-date-input">
+                  </div>
+                </div>
+                <div class="form-row">
+
+                  <div class="form-group col-md-4">
+                    <label for="inputState">Tipo</label>
+                    <select id="inputState" class="form-control">
+                      <option selected>--Selecciona--</option>
+                      <option>Vuelo economico</option>
+                      <option>Vuelo business</option>
+                      <option>Primera clase</option>
+                    </select>
+                  </div>
+                  <div class="form-group col-md-3">
+                    <label for="inputNumP">Nº Personas</label>
+                    <select id="inputNumP" class="form-control">
+                      <option selected>--</option>
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5 o más</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                      Aprueba los términos.
+                    </label>
+                  </div>
+                </div>
+              <form>
+                <button type="submit" class="btn btn-primary" title="Popover dice: ¿Desea continuar?" data-toggle="popover" data-trigger="hover" data-content="¿Desea continuar?">Buscar mejores ofertas</button>
+
+                <!--SCRIPT DEL POPOVER-->
+                <script>
+                  $(document).ready(function(){
+                      $('[data-toggle="popover"]').popover();   
+                  });
+                  </script>
+                  
+              </form>
             </div>
           </div>
           <div class="card">
-            <div class="card-body">
-              METODO DE PAGO(form)
-              </div>
+            <div class="text-info border">MÉTODO&nbsp;DE&nbsp;PAGO</div>
+            <div class="card-body bg-light">
+              <form>
+                <div class="form-group owner">
+                    <label for="owner">Propietario</label>
+                    <input type="text" class="form-control" id="owner">
+                </div>
+                <div class="form-group">
+                    <label for="cardNumber">Tarjeta de credito</label>
+                    <input type="text" class="form-control" id="cardNumber">
+                </div>
+                <div class="form-group CVV" id="card-number-field">
+                    <label for="cvv">CVV</label>
+                    <input type="text" class="form-control" id="cvv">
+                </div>
+                <div class="form-group" id="expiration-date">
+                    <label>Fecha de expiración:&nbsp;</label>
+                    <select>
+                        <option value="01">Enero</option>
+                        <option value="02">Febrero </option>
+                        <option value="03">Marzo</option>
+                        <option value="04">Abril</option>
+                        <option value="05">Mayo</option>
+                        <option value="06">Junio</option>
+                        <option value="07">Julio</option>
+                        <option value="08">Agosto</option>
+                        <option value="09">Septiembre</option>
+                        <option value="10">Octubre</option>
+                        <option value="11">Noviembre</option>
+                        <option value="12">Diciembre</option>
+                    </select>
+                    <select>
+                        <option value="19"> 2019</option>
+                        <option value="20"> 2020</option>
+                        <option value="21"> 2021</option>
+                        <option value="22"> 2022</option>
+                        <option value="23"> 2023</option>
+                        <option value="24"> 2024</option>
+                        <option value="25"> 2025</option>
+                    </select>
+                </div>
+                <div class="form-group" id="pay-now">
+                <!-- Button trigger modal -->
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                Confirmar
+              </button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">DATOS BANCARIOS</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            ¿Quieres guardar tus datos?
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
+                            <button type="button" class="btn btn-success" data-dismiss="modal">Guardar</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </form>              
+          </div>
             </div>
           </div>
             
         </div>
       </div>
 
+      
+
 <!--EMBED VIDEO-->
+<div class="form-group col-md-12">
+
     <div class="media text-center pb-4">
         <div class="container-lg mt-3 text-info">
             <div class="embed-responsive embed-responsive-16by9">
@@ -122,6 +255,9 @@
             </div>
         </div>
       </div>
+  
+  </div>
+     
     
     <!--
       FOOTER
