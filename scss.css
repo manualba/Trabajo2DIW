@@ -1,0 +1,47 @@
+body {
+  background: #b3dced;
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, #b3dced), color-stop(25%, white), color-stop(100%, white));
+  background: -webkit-gradient(linear, left top, left bottom, from(#b3dced), color-stop(25%, white), to(white));
+  background: linear-gradient(to bottom, #b3dced 0%, white 25%, white 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3dced', endColorstr='#ffffff', GradientType=0 );
+  font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+}
+
+#relog {
+  margin-left: 15em;
+}
+
+#register {
+  margin-right: 0.5em;
+}
+
+#login {
+  margin-left: 0.5em;
+}
+
+#buscador {
+  color: gray;
+  width: 400px;
+}
+
+#letracarrusel {
+  color: whitesmoke;
+  font-family: fantasy;
+}
+
+#contenido {
+  margin-left: auto;
+}
+
+#nav {
+  padding: 20px;
+}
+
+#footer {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+footer a {
+  color: rgba(0, 0, 0, 0.7);
+}
+/*# sourceMappingURL=scss.css.map */
