@@ -17,19 +17,9 @@
   <body>
     <!--
       HEADER
-      HEADER
-      HEADER
-      HEADER
-      HEADER
-      HEADER
-      HEADER
-      HEADER
-      HEADER
-      HEADER
-      HEADER
-      HEADER
-      HEADER
     -->
+
+    <!--Nav y navbar-->
     <nav class="navbar navbar-expand-lg navbar-light bg-light" id="nav">
       <a class="navbar-brand" href="index.html"><span class="text-info" id="logo">Manolo's</span>Travel</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -47,6 +37,7 @@
           <li class="nav-item">
             <a class="nav-link" href="hoteles.html">Hoteles</a>
           </li>
+          <!--Dropdown-->
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Alquiler
@@ -57,13 +48,14 @@
             </div>
           </li>
         </ul>
+        <!--Botones-->
         <form class="form-inline my-2 my-lg-0">
           <input class="form-control mr-sm-2" type="search" placeholder="Buscar..." aria-label="Search" id="buscador">
           <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Buscar</button>
         </form>
       </div>
-
-     <div id="relog">
+      <!--Botones-grupo-->
+     <div id="relog" class="btn-group">
         <form class="form-inline my-2 my-lg-0">
           <div id="register">
           <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Register</button>
@@ -71,24 +63,12 @@
         <div id="login">
           <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Login</button>
         </div>
-        </div>
+      </div>
     </nav>
     <!--
       BODY
-      BODY
-      BODY
-      BODY
-      BODY
-      BODY
-      BODY
-      BODY
-      BODY
-      BODY
-      BODY
-      BODY
-      BODY
     -->
-    <!--COOKIES-->
+    <!--Alert(COOKIES)-->
     <div class="alert alert-dismissible text-center cookiealert text-muted bg-white" role="alert">
       
       <b>Aceptar las cookies?</b> &#x1F36A;
@@ -101,10 +81,11 @@
       </button>
       
       </div>
-   <!--FINAL COOKIES-->
+   <!--FINAL Alert(COOKIES)-->
     <div class="row text-center pb-4">
 
       <div class="container-lg mt-3 ">
+        <!--Carrousel-->
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
           <ol class="carousel-indicators">
             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -141,7 +122,9 @@
   
     <div class="container-lg mt-3 " id="contenido"><!--Contenido-->
         <div class="card-deck">
+          <!--Card-->
           <div class="card">
+            <!--Media-->
             <div class="media">
             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Los_Angeles%2C_Winter_2016.jpg/1200px-Los_Angeles%2C_Winter_2016.jpg" class="card-img-top" alt="los_angeles.png" width="318px" height="298px"> 
             </div>
@@ -153,6 +136,7 @@
                   </a>
                   
                 </p>
+                <!--Collapse-->
                 <div class="collapse" id="collapseExample">
                   <div class="card card-body">
                     Los Ángeles, oficialmente Ciudad de Los Ángeles y de manera abreviada L. A., es la ciudad más poblada del estado estadounidense de California y la segunda ciudad más poblada de Estados Unidos, tras Nueva York<a href="https://es.wikipedia.org/wiki/Los_%C3%81ngeles" target="_blank">...</a>                  </div>
@@ -197,18 +181,6 @@
     
     <!--
       FOOTER
-      FOOTER
-      FOOTER
-      FOOTER
-      FOOTER
-      FOOTER
-      FOOTER
-      FOOTER
-      FOOTER
-      FOOTER
-      FOOTER
-      FOOTER
-      FOOTER
     -->
     <footer class="page-footer font-small mdb-color pt-4 bg-info" id="footer">
 
@@ -233,16 +205,16 @@
           <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
             <h6 class="text-uppercase mb-4 font-weight-bold">Navegación</h6>
             <p>
-              <a href="#">Inicio</a>
+              <a href="index.html">Inicio</a>
             </p>
             <p>
               <a href="vuelos.html">Vuelos</a>
             </p>
             <p>
-              <a href="#">Hoteles</a>
+              <a href="hoteles.html">Hoteles</a>
             </p>
             <p>
-              <a href="#">Alquiler</a>
+              <a href="alquiler.html">Alquiler</a>
             </p>
           </div>
           <!-- Grid column -->
@@ -253,10 +225,12 @@
           <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
             <h6 class="text-uppercase mb-4 font-weight-bold">Tu cuenta</h6>
             <p>
+              <!--Tooltip-->
               <a href="#!" data-toggle="tooltip" data-placement="right" title="Edita tu perfil">Editar perfil</a>
             </p>
             <p>
               <a href="#!" data-toggle="tooltip" data-placement="right" title="Tienes 2 mensajes sin leer">Mensajes</a>
+              <!--Badge-->
               <span class="badge badge-danger">2</span>
             </p>
             <p>
@@ -305,8 +279,9 @@
           <!-- Grid column -->
           <div class="col-md-5 col-lg-4 ml-lg-0">
     
-            <!-- Social buttons -->
+            <!-- Social MEdia buttons -->
             <div class="text-center text-md-right">
+              <!--List-->
               <ul class="list-unstyled list-inline">
                 <li class="list-inline-item">
                   <a class="btn-floating btn-sm rgba-white-slight mx-1">

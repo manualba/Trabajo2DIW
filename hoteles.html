@@ -17,18 +17,6 @@
   <body>
     <!--
       HEADER
-      HEADER
-      HEADER
-      HEADER
-      HEADER
-      HEADER
-      HEADER
-      HEADER
-      HEADER
-      HEADER
-      HEADER
-      HEADER
-      HEADER
     -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light" id="nav">
       <a class="navbar-brand" href="index.html"><span class="text-info">Manolo's</span>Travel</a>
@@ -63,7 +51,7 @@
         </form>
       </div>
 
-     <div id="relog">
+      <div id="relog" class="btn-group">
         <form class="form-inline my-2 my-lg-0">
           <div id="register">
           <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Register</button>
@@ -74,18 +62,6 @@
         </div>
     </nav>
     <!--
-      BODY
-      BODY
-      BODY
-      BODY
-      BODY
-      BODY
-      BODY
-      BODY
-      BODY
-      BODY
-      BODY
-      BODY
       BODY
     -->
     
@@ -151,7 +127,7 @@
                   $(document).ready(function(){
                       $('[data-toggle="popover"]').popover();   
                   });
-                  </script>
+                </script>
                   
               </form>
             </div>
@@ -169,8 +145,12 @@
                     <input type="text" class="form-control" id="cardNumber">
                 </div>
                 <div class="form-group CVV" id="card-number-field">
-                    <label for="cvv">CVV</label>
-                    <input type="text" class="form-control" id="cvv">
+                  <div class="input-group input-group-sm mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="inputGroup-sizing-sm">CVV</span>
+                    </div>
+                    <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+                  </div>
                 </div>
                 <div class="form-group" id="expiration-date">
                     <label>Fecha de expiración:&nbsp;</label>
@@ -260,18 +240,6 @@
   
     
     <!--
-      FOOTER
-      FOOTER
-      FOOTER
-      FOOTER
-      FOOTER
-      FOOTER
-      FOOTER
-      FOOTER
-      FOOTER
-      FOOTER
-      FOOTER
-      FOOTER
       FOOTER
     -->
 

@@ -2,10 +2,12 @@
 //Variables
 $footerColor: rgba(0,0,0,.7);
 
+//Herencia
 %ml {
     margin-left: 0.5em;
   }
   
+//Mixin
   @mixin transform($property) {
     -webkit-transform: $property;
     transform: $property;
