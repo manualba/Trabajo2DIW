@@ -1,3 +1,7 @@
+#login {
+  margin-left: 0.5em;
+}
+
 body {
   background: #b3dced;
   background: -webkit-gradient(left top, left bottom, color-stop(0%, #b3dced), color-stop(25%, white), color-stop(100%, white));
@@ -15,8 +19,9 @@ body {
   margin-right: 0.5em;
 }
 
-#login {
-  margin-left: 0.5em;
+#logo {
+  -webkit-transform: rotate(10deg);
+  transform: rotate(10deg);
 }
 
 #buscador {
