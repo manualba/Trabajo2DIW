@@ -2,6 +2,11 @@
   margin-left: 0.5em;
 }
 
+#letracarrusel {
+  color: whitesmoke;
+  font-family: fantasy;
+}
+
 body {
   background: #b3dced;
   background: -webkit-gradient(left top, left bottom, color-stop(0%, #b3dced), color-stop(25%, white), color-stop(100%, white));
@@ -27,11 +32,6 @@ body {
 #buscador {
   color: gray;
   width: 400px;
-}
-
-#letracarrusel {
-  color: whitesmoke;
-  font-family: fantasy;
 }
 
 #contenido {

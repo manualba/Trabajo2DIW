@@ -13,6 +13,9 @@ $footerColor: rgba(0,0,0,.7);
     transform: $property;
   }
 
+//Partials
+@import "sassimportar";
+
 body {
     
 	background: rgba(179,220,237,1);
@@ -45,10 +48,7 @@ body {
 	color: gray;
 	width: 400px;
 }
-#letracarrusel {
-	color: whitesmoke;
-	font-family: fantasy;
-}
+
 #contenido {
 	margin-left: auto;
 }
